@@ -1,0 +1,299 @@
+/*****************
+  GENERAL STYLES
+*****************/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+.wrapper {
+	display: table;
+	direction: rtl; /* to put sidebar to the left*/
+	margin: 0 auto;
+	max-width: 1200px;
+	min-height: 100vh;
+}
+
+.page-title {
+	margin: 1em 0;
+	text-align: center;
+}
+/*****************
+  MAIN STYLES
+*****************/
+.main {
+	display: table-cell;
+	vertical-align: top;
+	direction: ltr;
+	width: 64%;
+	height: 100%;
+}
+
+
+/*****************
+  ARTICLE STYLES
+*****************/
+article {
+	margin-top: .5em;
+	padding: 1.2em 2.5rem;
+}
+
+.article-title {
+	margin-top: .5em;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+
+.article-divider {
+	margin: .7rem 0;
+	height: 4px;
+	width: 7em;
+	background-color: #e8e0dd;
+}
+
+.article-img {
+	width: 90%;
+}
+
+.art-date {
+	padding: .5em 0;
+	font-weight: bold;
+}
+
+.art-content {
+	padding: 1em 0;
+}
+
+
+/*****************
+  HEADER STYLES
+*****************/
+
+header {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+}
+
+.header-slogan {
+	margin-top: 2.2em;
+	margin-bottom: 5px;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+.header-img {
+	margin-bottom: 3em;
+	height: 200px;
+	width: 100%;
+	background: url(../img/space.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+/*****************
+  ASIDE STYLES
+*****************/
+
+aside {
+	display: table-cell;
+	vertical-align: top;
+	direction: ltr;
+	padding: 2em;
+	width: 30%;
+	height: 100%;
+	background-color: #6C7A89;
+	text-align: center;
+}
+
+aside i,
+aside p {	
+	color: #fff;
+}
+
+aside p {
+	padding-top: 1em;
+}
+
+.profile-info {
+	margin: 3em 0;
+	text-align: center;
+}
+
+.profile-name {
+	display: inline-block;
+	margin-bottom: .5em;
+	font-weight: bolder;
+}
+
+.aside-ornament {
+	display: table-cell;
+	vertical-align: top;
+	width: .5%;
+	height: 100%;
+	background-color: #6C7A89;
+
+}
+
+
+/*****************
+  NAVBAR STYLES
+*****************/
+
+.main-nav {
+	margin: 0 auto;
+	width: 60%;
+	list-style-type: none;
+	text-align: left;
+}
+
+.main-nav li {
+	margin-bottom: 5px;
+}
+
+.main-nav li a {
+	display: inline-block;
+	padding: .7em 1em;
+	border: 3px solid #fff;
+	border-radius: .4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+}
+
+.main-nav li a:hover {
+	background-color: #fff;
+	color: #d6aea0;
+	border-color: #fff;
+}
+
+
+
+/*****************
+  FORM STYLES
+*****************/
+#contact-form {
+	padding: 0 3rem;
+}
+
+form {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.form-label {
+	text-align: right;
+	font-weight: bold;
+}
+
+.label-textarea {
+	vertical-align: top;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+	margin-left: 1em;
+	margin-bottom: .4em;
+	padding: .5rem;
+	width: 15em;
+	border: 1px solid #BDC3C7;
+	border-radius: .4em;
+	color: #444;
+}
+
+input[type=submit] {
+	margin-left: 1em;
+	margin-bottom: 3em;
+	padding: .5em;
+	background-color: #6C7A89;
+	border: 1px solid transparent;
+	border-radius: .4em;
+	color: #eee;
+}
+
+select {
+	margin: 2em;
+	padding: .6em .8em;
+	width: 80%;
+	border-radius: 3px;
+}
+
+.hidden-form-container {
+	padding: 0 2.5rem;
+}
+
+#edit-art,
+#delete-art {
+	display: inline-block;
+	margin: 0;
+	width: auto;
+}
+
+#submit-delete {
+	margin-left: 0;
+	background-color: #D24D57;
+}
+
+#submit-edit {
+	margin-left: 0;
+	background-color: #5C97BF;
+}
+
+#search-form {
+	margin-top: 3rem;
+	margin-left: 3rem;
+}
+
+
+
+/*******************
+  TEMPORARY STYLES
+********************/
+
+.noresult-search {
+	margin-left: 3rem;
+}
+
+.keyword {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.message {
+	margin: 0 auto;
+	padding: 1em 2em;
+	width: 80%;
+}
+
+.message-error {
+	background-color: #f29b93;
+	border-left: 4px solid #E74C3C;
+}
+
+.message-success {
+	background-color: #91d8bc;
+	border-left: 4px solid #2ECC71;
+}
+
+.error-list {
+	margin-left: 4em;
+	padding: 2em;
+	width: 50%;
+	background-color: #f29b93;
+	border-left: 4px solid #E74C3C;
+}
+
+.error-list li {
+	margin-bottom: .5em;
+}
